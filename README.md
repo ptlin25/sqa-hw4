@@ -1,5 +1,5 @@
 # Getting Started
-This repo has happy-path tests with Selenium and unhappy-path tests with Playwright. The Selenium tests can be run using a Chrome browser or a Firefox browser. The Playwright tests are run using a Chome browser. 
+This repo has happy-path tests with Selenium and unhappy-path tests with Playwright. The Selenium tests can be run using a Chrome browser or a Firefox browser. The Playwright tests are run using a Chrome browser. 
 
 ## Set Up
 This project uses `uv` to manage packages and dependencies. To set up the virtual environment, run  
