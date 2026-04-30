@@ -37,7 +37,7 @@ def _get_driver(browser="chrome"):
 @pytest.fixture
 def driver(request):
     browser = request.config.getoption("--browser")
-    d = _get_driver(browser[0])
+    d = _get_driver(browser[0]) if browser else _get_driver()
     yield d
     d.quit()
 
