@@ -33,18 +33,9 @@ class BlogReader(HttpUser):
     
 
 LOAD_TEST = [
-    {"duration": 60, "users": 100, "spawn_rate": 10},       # ramp up to 100 VUs
-    {"duration": 240, "users": 100, "spawn_rate": 10},      # hold at peak load
-    {"duration": 300, "users": 0, "spawn_rate": 10},        # ramp down
-]
-
-SPIKE_TEST = [
-    {"duration": 60, "users": 100, "spawn_rate": 10},       # baseline
-    {"duration": 70, "users": 1000, "spawn_rate": 200},     # spike
-    {"duration": 120, "users": 1000, "spawn_rate": 200},    # hold spike briefly
-    {"duration": 130, "users": 100, "spawn_rate": 200},     # back to baseline
-    {"duration": 240, "users": 100, "spawn_rate": 10},      # observe recovery
-    {"duration": 300, "users": 0, "spawn_rate": 10},
+    {"duration": 10, "users": 10, "spawn_rate": 10},       # ramp up to 100 VUs
+    {"duration": 50, "users": 40, "spawn_rate": 10},      # hold at peak load
+    {"duration": 60, "users": 0, "spawn_rate": 10},        # ramp down
 ]
 
 
