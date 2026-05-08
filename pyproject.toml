@@ -9,6 +9,7 @@ dependencies = [
     "pytest>=7.0",
     "pytest-selenium",
     "pytest-playwright",
+    "locust>=2.34.0",
 ]
 
 [tool.pytest.ini_options]
