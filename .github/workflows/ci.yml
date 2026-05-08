@@ -21,4 +21,4 @@ jobs:
       - run: uv sync
       - run: source .venv/bin/activate
       - run: uv run playwright install
-      - run: uv run pytest --cov=app --junit-xml=results.xml tests/test_playwright.py
+      - run: uv run pytest --junit-xml=results.xml tests/test_playwright.py
