@@ -17,6 +17,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - run: pip install uv
       - run: uv sync
       - run: source .venv/bin/activate
       - run: uv run pytest tests/test_playwright.py
