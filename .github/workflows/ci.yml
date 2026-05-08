@@ -20,5 +20,5 @@ jobs:
       - run: pip install uv
       - run: uv sync
       - run: source .venv/bin/activate
-      - run: playwright install
+      - run: uv run playwright install
       - run: uv run pytest tests/test_playwright.py
